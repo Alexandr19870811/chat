@@ -1,0 +1,13 @@
+@import "src/styles/colors.scss";
+
+.headerMini {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .headerMini {
+    display: block;
+    border-bottom: 1px solid $grey_light3;
+    box-shadow: 0 4px 8px -2px $grey_light;
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../../styles/colors";
+
+.messageInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noAvailableChat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $grey_basic;
+  font-size: 24px;
+}

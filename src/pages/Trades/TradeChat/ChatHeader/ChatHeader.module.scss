@@ -1,0 +1,59 @@
+@import "../../../../styles/colors";
+
+.chatHeader {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 17px;
+
+  .delete {
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+    background-color: $grey_light3;
+  }
+
+  .text {
+    p {
+      margin: 0;
+    }
+
+    .paymentMethod {
+      font-size: 20px;
+      color: $grey_basic;
+      font-weight: 600;
+    }
+
+    .reputation {
+      font-size: 14px;
+      font-weight: 400;
+      color: $grey_basic;
+      text-align: center;
+
+      .positive {
+        color: $green_basic;
+        margin-left: 10px;
+      }
+
+      .negative {
+        color: $red_banner;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .chatHeader {
+
+    .delete {
+      background-color: transparent;
+      left: 90%;
+    }
+
+    .text {
+      display: none;
+    }
+  }
+}

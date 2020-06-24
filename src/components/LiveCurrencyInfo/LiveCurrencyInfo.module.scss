@@ -1,0 +1,36 @@
+@import 'src/styles/colors.scss';
+
+.liveCurrencyInfo {
+  width: calc(100% - 24px);
+  height: auto;
+  margin: 20px 0 0 0;
+  padding: 12px 4px;
+  background-color: $grey_extra-lighter;
+  border-radius: 2px;
+
+  .description {
+    width: 250px;
+    font-size: 8px;
+    padding: 0;
+    margin-top: 20px;
+    word-break: break-all;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: normal;
+    font-size: 12px;
+    color: $grey_basic;
+    margin-bottom: 4px;
+
+    span {
+      min-width: 70px;
+      font-size: 12px;
+      font-weight: bolder;
+      color: $grey_basic;
+    }
+  }
+}

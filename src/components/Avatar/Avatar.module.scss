@@ -1,0 +1,30 @@
+@import "../../styles/colors";
+
+.avatar {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 42px;
+    height: 42px;
+    margin: 0 0 4px 0;
+    border-radius: 50%;
+    border: 1px solid $grey_light;
+  }
+
+  span {
+    font-size: 10px;
+    font-weight: 900;
+  }
+
+  .greenStatus {
+    color: $green_basic;
+  }
+
+  .greyStatus {
+    color: $grey_light;
+  }
+}

@@ -1,0 +1,46 @@
+@import "../../../../styles/colors";
+
+.tradeBriefInfo {
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 0 0 0 30px;
+
+  .name {
+    position: relative;
+    font-size: 12px;
+    font-weight: 600;
+    color: $grey_basic;
+
+    .bullet {
+      position: absolute;
+      left: -16px;
+      top: -10px;
+      font-size: 26px;
+      color: $grey_basic;
+    }
+
+    .greenBullet {
+      color: $green_light_basic3;
+    }
+  }
+
+  .briefInfo {
+    display: flex;
+    flex-direction: column;
+
+    .paymentMethod {
+      font-size: 16px;
+      font-weight: 600;
+      color: $grey_dark;
+    }
+
+    .amount {
+      font-size: 10px;
+      font-weight: 300;
+      color: $grey_basic;
+    }
+  }
+}

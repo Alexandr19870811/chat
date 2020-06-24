@@ -1,0 +1,50 @@
+@import "src/styles/colors.scss";
+
+.chatMessageBuyer {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  word-break: break-word;
+
+  img {
+    min-width: 36px;
+    height: 36px;
+    margin-top: 6px;
+    border-radius: 50%;
+    border: 1px solid $grey_light2;
+  }
+
+  .message {
+    position: relative;
+    min-height: 22px;
+    flex-grow: 1;
+    color: $white_solid;
+    font-size: 14px;
+    margin: 0 10px 20px 60px;
+    padding: 14px 6px 14px;
+    border: 1px solid #5b7393;
+    border-radius: 2px;
+    background-color: #5b7393;
+  }
+
+  .message::after {
+    position: absolute;
+    right: -6px;
+    top: 20px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 6px solid #5b7393;
+  }
+
+  .msgTime {
+    position: absolute;
+    bottom: 8px;
+    right: 46px;
+    color: $grey_extra_light;
+    font-size: 9px;
+  }
+}

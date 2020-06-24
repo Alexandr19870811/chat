@@ -1,0 +1,45 @@
+@import "../../../styles/colors";
+
+.tradeBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $grey_light3;
+  padding: 10px 0;
+  text-decoration: none;
+  -webkit-transition: top 1s ease-out 0.5s;
+  -moz-transition: top 1s ease-out 0.5s;
+  -o-transition: top 1s ease-out 0.5s;
+  transition: top 1s ease-out 0.5s;
+}
+
+.emptyTradesBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid $grey_light3;
+  padding: 10px 0;
+  text-decoration: none;
+
+  p {
+    margin: 0;
+    color: $grey_basic;
+    font-size: 18px;
+  }
+
+  p:first-of-type {
+    font-weight: bolder;
+  }
+
+  p:last-of-type {
+    font-weight: 300;
+    font-size: 14px;
+  }
+}
+
+.activeTrade {
+  background-color: $grey_light3;
+  transform: scale(1.05);
+}

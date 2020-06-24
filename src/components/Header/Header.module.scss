@@ -1,0 +1,58 @@
+@import "src/styles/colors.scss";
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid $grey_light3;
+  box-shadow: 0 4px 8px -2px $grey_light;
+
+  .name {
+    min-width: 200px;
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+    padding: 0 20px;
+    margin: 0;
+  }
+
+  .disabledLink {
+    pointer-events: none;
+  }
+
+  button {
+    height: 50px;
+    width: 160px;
+    color: $grey_basic;
+    font-size: 14px;
+    border: none;
+    border-right: 1px solid $grey_light3;
+    cursor: pointer;
+  }
+
+  button:first-of-type {
+    border-left: 1px solid $grey_light3;
+  }
+
+  .toggleBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: 600;
+    color: $white_solid;
+    background-color: $blue_semi-light;
+  }
+}
+
+.menuIconWrapper {
+  display: none;
+}
+
+
+@media screen and (max-width: 960px) {
+  .header {
+    display: none;
+  }
+}

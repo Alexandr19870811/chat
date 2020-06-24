@@ -1,0 +1,124 @@
+@import "../../../styles/colors";
+
+.tradeInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      margin: 0;
+    }
+
+    .headerTitle {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .headerTime {
+      font-weight: 300;
+      font-size: 12px;
+    }
+  }
+
+  .buttonContainer {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      color: $white_solid;
+      background-color: $green_basic2;
+    }
+  }
+
+  .infoTable {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 240px;
+
+    .infoBox {
+      width: 118px;
+      height: 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid $grey_light2;
+
+      img {
+        width: 36px;
+        height: 36px;
+        margin-bottom: 8px;
+        border-radius: 50%;
+        border: 1px solid $grey_light2;
+      }
+
+      span:first-of-type {
+        margin-bottom: 8px;
+      }
+
+      .reputation {
+        display: flex;
+        flex-direction: row;
+
+        span {
+          font-size: 14px;
+          font-weight: 600;
+        }
+
+        .positive {
+          color: $green_basic;
+        }
+
+        .negative {
+          color: $red_basic_single;
+        }
+      }
+
+      .title {
+        font-size: 16px;
+        font-weight: 600;
+        color: $grey_basic;
+      }
+
+      .numOfTrades {
+        font-size: 14px;
+        color: $grey_dark;
+        font-weight: 900;
+      }
+
+      .status {
+        font-size: 14px;
+        color: $green_basic;
+        font-weight: 600;
+      }
+
+      .greenStatus {
+        color: $green_basic;
+      }
+
+      .greyStatus {
+        color: $grey_light;
+      }
+
+      .amount {
+        font-size: 14px;
+        color: $grey_basic;
+        font-weight: 400;
+      }
+    }
+
+    .infoBox:nth-child(2n+1) {
+      border-right: 1px solid $grey_light2;
+    }
+  }
+}
